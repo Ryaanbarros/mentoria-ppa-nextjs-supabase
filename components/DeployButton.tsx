@@ -1,12 +1,13 @@
-export default function DeployButton() {
+import React from 'react';
+
+export default function DeployButton({ hrefParam }:any) {
   return (
     <a
       className="py-2 px-3 flex rounded-md no-underline hover:bg-btn-background-hover border"
-      href="https://banco-de-dados-nextjs.netlify.app/notes"
-      target="_blank"
+      href={'/'+hrefParam}
       rel="noreferrer"
     >
-      Notas
+      {hrefParam}
     </a>
   );
 }
