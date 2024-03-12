@@ -72,7 +72,7 @@ export default function Login({
         >
           <polyline points="15 18 9 12 15 6" />
         </svg>{" "}
-        Back
+        Voltar
       </Link>
 
       <form
@@ -80,16 +80,16 @@ export default function Login({
         action={signIn}
       >
         <label className="text-md" htmlFor="email">
-          Email
+          E-mail
         </label>
         <input
           className="rounded-md px-4 py-2 bg-inherit border mb-6"
           name="email"
-          placeholder="you@example.com"
+          placeholder="seu_e-mail@example.com"
           required
         />
         <label className="text-md" htmlFor="password">
-          Password
+          Senha
         </label>
         <input
           className="rounded-md px-4 py-2 bg-inherit border mb-6"
